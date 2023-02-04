@@ -54,7 +54,7 @@ Users should be able to:
 
 - Solution URL: [Repo:](https://github.com/Ibrahim-003/juniorProject__1)
 
-- Live Site URL: [landing Page](https://your-live-site-url.com)
+- Live Site URL: [landing Page](https://ibrahim-003.github.io/juniorProject__1/)
 
   
 
