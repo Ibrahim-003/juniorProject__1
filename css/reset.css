@@ -1,0 +1,102 @@
+/* custome properties */
+
+:root {
+    --pink: hwb(322 32% 0%);
+    --ligth-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --Very-dark-cyan: hsl(192, 100%, 9%);
+    --Very-pale-blue: hsl(207, 100%, 98%);
+    --primary-font_family: 'Open Sans';
+    --secondary-font_family: Poppins;
+    --header-height: 3.5rem;
+    --h1-font-size: clamp(1.5rem, 5vw, 3rem);
+    --h2-font-size: clamp(1.25rem, 3vw, 2rem);
+    --h4-font-size: clamp(.865rem, 3vw, 1.125rem);
+    --little-white: #fff;
+}
+
+
+
+/* reset css */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font_family);
+    font-weight: 700;
+}
+
+html {
+    font-family: var(--primary-font_family);
+    font-size: 16px;
+    color: var(--Very-dark-cyan);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    display: block;
+}
+
+button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: var(--little-white);
+    font-size: .95rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* Comoponents */
+
+.component-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+
+/* utilities */
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.box-shadow_1 {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}

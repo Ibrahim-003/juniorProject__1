@@ -1,0 +1,295 @@
+.header {
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    height: var(--header-height);
+    background-color: var(--little-white);
+    overflow: hidden;
+}
+
+.logo-header {
+    width: 7rem;
+}
+
+.header>.menu-btn {
+    background-color: inherit;
+    color: var(--pink);
+    padding: .375rem 1.25rem;
+    border: thin solid var(--pink);
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+/* main */
+.main {
+    position: relative;
+    gap: 6rem;
+    /* padding-bottom: 5rem; */
+}
+
+section {
+    padding: 0 2rem;
+}
+
+section:not(.characteristics, .newsletter-section, .contact-section) {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* first section */
+.main section:first-of-type {
+    height: 60vh;
+}
+
+.description {
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.description h1 {
+    font-size: var(--h1-font-size);
+}
+
+.description p,
+.characteristics .container .text-content p {
+    margin: 0 auto;
+    width: min(100%, 31.25rem);
+}
+
+.description button {
+    margin: 0 auto;
+    background-color: var(--pink);
+    padding: .85rem 3rem;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+}
+
+
+/* third section --- social media */
+.social-media {
+    gap: 5.5rem;
+    width: 100%;
+}
+
+.social-media article {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.social-media img {
+    width: 1.25rem;
+}
+
+.social-media h2 {
+    font-size: clamp(3rem, 7vw, 5rem);
+}
+
+.social-media h4 {
+    font-size: var(--h4-font-size);
+    font-family: var(--primary-font_family);
+    font-weight: normal;
+    color: #aaa;
+}
+
+/* fourth section --- characteristics */
+
+.characteristics {
+    padding: 0;
+    gap: 3rem;
+}
+
+.characteristics article {
+    width: 100%;
+    text-align: center;
+}
+
+.characteristics article .container {
+    background-color: #F6FBFF;
+    gap: 4.5rem;
+    padding: 3rem 2rem;
+}
+
+.characteristics .container.middle {
+    background-color: inherit;
+}
+
+.characteristics .container .img-container img {
+    width: 70%;
+    max-width: 23.45rem;
+    margin: 0 auto;
+}
+
+.characteristics .container .text-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: var(--h2-font-size);
+}
+
+/* description second */
+.description.second {
+    height: 50vh;
+    padding-top: 0;
+}
+
+.description.second h2 {
+    font-size: var(--h2-font-size);
+}
+
+
+.description button.second-btn {
+    margin-top: 1rem;
+}
+
+
+/* footer */
+
+footer {
+    padding: 4rem 0 0 0;
+}
+
+.footer-container {
+    flex-direction: column-reverse;
+    background-color: var(--Very-dark-cyan);
+    gap: 6rem;
+    color: var(--Very-pale-blue);
+    font-weight: 400;
+    padding: 1rem 0 2rem 0;
+}
+
+.contact-section,
+.newsletter-section {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-section h2 {
+    text-transform: uppercase;
+}
+
+.newsletter-section p,
+.contact-section p {
+    margin-top: 1.275rem;
+    line-height: 1.5;
+}
+
+.newsletter-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-end;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+.newsletter-form button {
+    padding: 1rem 2.5rem;
+    border-radius: .25rem;
+    background-color: var(--pink);
+}
+
+.contact-section .logo-footer svg path {
+    fill: #fff;
+}
+
+.contact-section .contact,
+.contact-section .social-media {
+    margin-top: 3rem;
+}
+
+.contact ul li {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+li img.phone,
+li img.email {
+    width: 1.25rem;
+    height: auto;
+    display: inline;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        height: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .logo-header {
+        width: 9rem;
+    }
+
+    .main section:first-of-type {
+        height: 50vh;
+    }
+
+    .social-media {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        height: 5rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+
+    .logo-header {
+        width: 11rem;
+    }
+
+    .header>.menu-btn {
+        font-size: 1.125rem;
+        padding: .5rem 1.5rem;
+    }
+
+    .social-media {
+        justify-content: space-between;
+    }
+
+    .characteristics .container.middle {
+        flex-direction: row;
+    }
+
+    .characteristics article .container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .characteristics article .container .img-container {
+        flex: 1;
+    }
+
+    .characteristics article .container .text-content {
+        flex: 1;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .main section:first-of-type {
+        height: 70vh;
+    }
+}
