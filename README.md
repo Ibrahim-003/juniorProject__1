@@ -52,9 +52,9 @@ Users should be able to:
 
   
 
-- Solution URL: [Repo:](https://github.com/Ibrahim-003/juniorProject_2)
+- Solution URL: [Repo:](https://github.com/Ibrahim-003/juniorProject_1)
 
-- Live Site URL: [landing Page](https://ibrahim-003.github.io/juniorProject_2/)
+- Live Site URL: [landing Page](https://ibrahim-003.github.io/juniorProject_1/)
 
   
 
